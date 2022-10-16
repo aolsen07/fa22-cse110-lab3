@@ -1,0 +1,13 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    background-color: aquamarine;
+    justify-items: center;
+    padding: 10px 10px 10 10;
+}
+
+nav.a {
+    justify-items: center;
+}
