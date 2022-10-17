@@ -14,7 +14,7 @@
     </nav>
   </header>
   <body>
-    <h2>Group Members</h2>
+    <h2>Group Members Present</h2>
     <ul>
       <li>Alexander Olsen</li>
       <li>Alexander G. Arias</li>
@@ -23,7 +23,7 @@
       <li>Jennifer</li>
       <li>Hyunmin</li>
       <li>Buwei</li>
-      <li>Xiaoyu</li>
+      <li id="missing">Xiaoyu</li>
     </ul>
     <hr>
     <h2>Announcements</h2>
@@ -49,15 +49,6 @@
       <li>Established basis for communication</li>
     </ul>
 
-    <h3>Agreements</h3>
-    <p>Our favorite music video:</p>
-    <video src="video1582356261.mp4" controls>Need to add a video here</video>
-    <p>Our favorite song in general:</p>
-    <audio src="audio1582356261.m4a" controls>Need to add some Rick Roll audio</audio>
-    <p>A sushi roll named after <strong>Rick Astley</strong> would indeed become a <em>Rick Roll</em> as opposed to <i>Astley Roll</i></p>
-    <p>We may want to try to play Soccer soon, though someone else calls it Futbol</p>
-    <img src="soccer.png" width="640px">
-
     <div>
       <h2>Plan For Next Time</h2>
       <ol>
@@ -66,11 +57,22 @@
         <li>How often do we want to meet?</li>
       </ol>
     </div>
-    <h3>End of meeting :)</h3>
+    <h3>Meeting Recordings</h3>
+    <div class="recording-container">
+      <div class="item">
+        <p>Video Recording:</p>
+        <video src="video1582356261.mp4" id="zoom" controls>Need to add a video here</video>
+      </div>
+      <div class="item">
+        <p>Audio Recording:</p>
+        <audio src="audio1582356261.m4a" id="podcast" controls>Need to add some Rick Roll audio</audio>
+      </div>
+    </div>
   </body>
   <hr>
   <footer>
     <h1>Daily Standup</h1>
+    <!-- this form is scuffed -->
     <form>
       <fieldset>
         <label for="set-check">Good idea?</label>
@@ -99,9 +101,9 @@
         <option value="angular">AngularJS</option>
         <option value="other">Something else...</option>
       </datalist>
-
+  
       <select name="" id="">Select this</select>
-      <button>Submit</button>
+      <button id="submit">Submit</button>
     </form>
   </footer>
 </html
