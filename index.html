@@ -74,25 +74,28 @@
     <h1>Daily Standup</h1>
     <!-- this form is scuffed -->
     <form>
+      <label for="set-check">Good idea?</label>
+      <input type="checkbox" name="set-check" id="set-check">  
       <fieldset>
-        <label for="set-check">Good idea?</label>
-        <input type="checkbox" name="set-check" id="set-check">
+        <legend>This is a box of selections</legend>
         <section>
           <label for="design-radio">Design Idea</label>
-          <input type="radio" name="design-radio" id="design-radio">
+          <input type="radio" name="radio" id="design-radio">
           <label for="coding-radio">Coding Idea</label>
-          <input type="radio" name="coding-radio" id="coding-radio">
+          <input type="radio" name="radio" id="coding-radio">
           <label for="social-radio">Social Idea</label>
-          <input type="radio" name="social-radio" id="social-radio">
+          <input type="radio" name="radio" id="social-radio">
         </section>
-        <label for="set-text">Short name for the idea</label>
-        <input type="text" name="set-text" id="set-text">
-        <label for="set-date">Today's date?</label>
-        <input type="date" name="set-date" id="set-date">
       </fieldset>
+      <label for="set-text">Short name for the idea</label>
+      <input type="text" name="set-text" id="set-text"><br><br>
+      <label for="set-date">Today's date?</label>
+      <input type="date" name="set-date" id="set-date">
+      <br><br>  
       <label for="idea"><u>Describe the nature of the idea</u></p>
       <textarea name="idea" id="idea" cols="30" rows="10">Write some things...
       </textarea>
+      <br><br>  
 
       <input list="languages">
       <datalist id="languages">
@@ -101,8 +104,13 @@
         <option value="angular">AngularJS</option>
         <option value="other">Something else...</option>
       </datalist>
-  
-      <select name="" id="">Select this</select>
+      <br><br>  
+
+      <label for="selection">Select something</label>
+      <select name="selection" id="selection">Select this</select>
+      
+      <br><br>  
+
       <button id="submit">Submit</button>
     </form>
   </footer>

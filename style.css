@@ -26,7 +26,6 @@ nav {
     width: 60%;
 }
 
-
 #missing {
     text-decoration: line-through;
 }
@@ -77,4 +76,14 @@ ul ~ ol {
 
 li {
     text-decoration:double;
+}
+
+#submit {
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+    color: black;
+}
+
+fieldset {
+    max-width: 50%;
 }
