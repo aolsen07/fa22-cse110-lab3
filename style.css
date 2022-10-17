@@ -1,0 +1,89 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:cadetblue;
+    color: aliceblue;
+}
+
+/* how to incorporate more things */
+
+nav {
+    background-color: gray;
+    justify-items: center;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    position: sticky;
+}
+
+.recording_container {
+    display: grid;
+}
+
+#zoom {
+    max-width: 60%;
+    width: 60%;
+}
+
+#missing {
+    text-decoration: line-through;
+}
+
+a {
+    justify-items: center;
+    margin: auto auto 0 0;
+    background-color: gray;
+    position: relative;
+    border-color: white;
+    border-style: ridge;
+    border-width: 2px;
+    border-radius: 3px;
+    padding: 2px 5px 5px 2px;
+}
+
+a:hover {
+    color: blue;
+    border-color: blue;
+}
+
+a:active {
+    color: blueviolet;
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+header {
+    display: block;
+}
+
+ul {
+    display: flexbox;
+}
+
+ol {
+    display: flexbox;
+}
+
+ul ~ ol {
+    text-decoration: underline;
+    
+}
+
+li {
+    text-decoration:double;
+}
+
+#submit {
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+    color: black;
+}
+
+fieldset {
+    max-width: 50%;
+}

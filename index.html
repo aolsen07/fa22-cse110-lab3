@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Alexander Olsen's Meeting Notes</title>
     <link rel="icon" href="/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
   </head>
   <header>
     <h1><strong>Meeting Notes</strong></h1>
@@ -13,7 +14,7 @@
     </nav>
   </header>
   <body>
-    <h2>Group Members</h2>
+    <h2>Group Members Present</h2>
     <ul>
       <li>Alexander Olsen</li>
       <li>Alexander G. Arias</li>
@@ -22,7 +23,7 @@
       <li>Jennifer</li>
       <li>Hyunmin</li>
       <li>Buwei</li>
-      <li>Xiaoyu</li>
+      <li id="missing">Xiaoyu</li>
     </ul>
     <hr>
     <h2>Announcements</h2>
@@ -48,15 +49,6 @@
       <li>Established basis for communication</li>
     </ul>
 
-    <h3>Agreements</h3>
-    <p>Our favorite music video:</p>
-    <video src="rick-roll-video.mp4" controls>Need to add a video here</video>
-    <p>Our favorite song in general:</p>
-    <audio src="rick-roll-audio.mp3" controls>Need to add some Rick Roll audio</audio>
-    <p>A sushi roll named after <strong>Rick Astley</strong> would indeed become a <em>Rick Roll</em> as opposed to <i>Astley Roll</i></p>
-    <p>We may want to try to play Soccer soon, though someone else calls it Futbol</p>
-    <img src="soccer.png" width="640px">
-
     <div>
       <h2>Plan For Next Time</h2>
       <ol>
@@ -65,31 +57,45 @@
         <li>How often do we want to meet?</li>
       </ol>
     </div>
-    <h3>End of meeting :)</h3>
+    <h3>Meeting Recordings</h3>
+    <div class="recording-container">
+      <div class="item">
+        <p>Video Recording:</p>
+        <video src="video1582356261.mp4" id="zoom" controls>Need to add a video here</video>
+      </div>
+      <div class="item">
+        <p>Audio Recording:</p>
+        <audio src="audio1582356261.m4a" id="podcast" controls>Need to add some Rick Roll audio</audio>
+      </div>
+    </div>
   </body>
   <hr>
   <footer>
     <h1>Daily Standup</h1>
+    <!-- this form is scuffed -->
     <form>
+      <label for="set-check">Good idea?</label>
+      <input type="checkbox" name="set-check" id="set-check">  
       <fieldset>
-        <label for="set-check">Good idea?</label>
-        <input type="checkbox" name="set-check" id="set-check">
+        <legend>This is a box of selections</legend>
         <section>
           <label for="design-radio">Design Idea</label>
-          <input type="radio" name="design-radio" id="design-radio">
+          <input type="radio" name="radio" id="design-radio">
           <label for="coding-radio">Coding Idea</label>
-          <input type="radio" name="coding-radio" id="coding-radio">
+          <input type="radio" name="radio" id="coding-radio">
           <label for="social-radio">Social Idea</label>
-          <input type="radio" name="social-radio" id="social-radio">
+          <input type="radio" name="radio" id="social-radio">
         </section>
-        <label for="set-text">Short name for the idea</label>
-        <input type="text" name="set-text" id="set-text">
-        <label for="set-date">Today's date?</label>
-        <input type="date" name="set-date" id="set-date">
       </fieldset>
+      <label for="set-text">Short name for the idea</label>
+      <input type="text" name="set-text" id="set-text"><br><br>
+      <label for="set-date">Today's date?</label>
+      <input type="date" name="set-date" id="set-date">
+      <br><br>  
       <label for="idea"><u>Describe the nature of the idea</u></p>
       <textarea name="idea" id="idea" cols="30" rows="10">Write some things...
       </textarea>
+      <br><br>  
 
       <input list="languages">
       <datalist id="languages">
@@ -98,9 +104,14 @@
         <option value="angular">AngularJS</option>
         <option value="other">Something else...</option>
       </datalist>
+      <br><br>  
 
-      <select name="" id="">Select this</select>
-      <button>Submit</button>
+      <label for="selection">Select something</label>
+      <select name="selection" id="selection">Select this</select>
+      
+      <br><br>  
+
+      <button id="submit">Submit</button>
     </form>
   </footer>
 </html
