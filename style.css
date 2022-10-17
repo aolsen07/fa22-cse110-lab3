@@ -74,8 +74,8 @@ ul ~ ol {
     
 }
 
-li {
-    text-decoration:double;
+ol > li {
+    color: beige;
 }
 
 #submit {
@@ -86,4 +86,9 @@ li {
 
 fieldset {
     max-width: 50%;
+}
+
+label + input {
+    background-color: beige;
+    color: black;
 }
